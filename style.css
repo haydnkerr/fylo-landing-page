@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    font-family: "Open Sans";
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+    width: 100%;
+    height: auto;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 50px;
+    
+}
+
+.nav {
+    font-family: "Raleway";
+    
+}
+
+.nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: hsl(176, 68%, 64%);
+
+}
+
+.nav:hover {
+    cursor: pointer;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 150px;
+    width: 90%;
+}
+
+.intro img {
+    width: 100%;
+}
+
+.intro p {
+    padding: 50px;
+}
+
+.info a {
+    text-decoration: underline;
+    color: hsl(176, 55%, 42%);
+}
+
+.info a:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.btn {
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    border: none;
+    width: 200px;
+    height: 50px;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: none;
+    border: 2px solid hsl(176, 68%, 64%);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.features {
+    text-align: center;
+    width: 90%;
+    margin-bottom: 100px;
+    background-image: url("./images/bg-curvy-desktop.svg");
+}
+
+.features-card {
+    margin-bottom: 100px;
+}
+
+.features img {
+    margin-bottom: 30px;
+}
+
+.info {
+    margin-bottom: 100px;
+    width:90%;
+}
+
+.info p {
+    margin: 10px 0px;
+}
+
+.left {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.team {
+    margin-bottom: 100px;
+    width: 90%;
+    background-image: url("./images/bg-quotes.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.card {
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 5px;
+    margin-bottom: 30px; 
+    padding: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.team img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+h6 {
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.signup {
+    background-color: hsl(217, 28%, 15%);
+    width: 70%;
+    text-align: center;
+    padding: 40px;
+    transform: translateY(50%);
+    border-radius: 20px;
+}
+
+
+
+#email {
+    background-color: white;
+    border: none;
+    width: 100%;
+    padding-left: 40px;
+    height: 50px;
+    color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#subscribe {
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    border: none;
+    width: 100%;
+    height: 50px;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+#subscribe:hover {
+    cursor: pointer;
+    background: none;
+    border: 2px solid hsl(176, 68%, 64%);
+}
+
+footer {
+    background-color: hsl(216, 53%, 9%);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 200px 100px 100px 100px;
+
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer p {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.links {
+    margin: 15px 0px 15px 0px;
+}
+
+
+
+@media (min-width: 860px) {
+    .intro {
+        width: 60%;
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .features-card {
+        width: 45%;
+    }
+
+    .info {
+        display: flex;
+        width: 90%;
+        align-items: center;
+    }
+
+    .info-right {
+        padding: 50px;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .team {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+
+    }
+
+    .card {
+        width: 31%;
+    }
+
+    #email {
+        width: 60%;
+        padding-left: 40px;
+        margin: 20px 40px 0px 0px;
+    }
+    #subscribe {
+        width: 200px;
+        margin-top: 15px;
+    }
+
+    .signup p {
+        padding: 0px 70px 0px 70px; 
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        
+    }
+
+    footer p{
+        width: 100%;
+        margin: 0px;
+    }
+    
+    footer ul {
+        margin-left: 100px;
+        width: 100%;
+    }
+}
+
+
+
+
+
